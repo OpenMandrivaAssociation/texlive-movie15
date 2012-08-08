@@ -1,11 +1,11 @@
-# revision 25767
+# revision 26473
 # category Package
 # catalog-ctan /macros/latex/contrib/movie15
-# catalog-date 2012-03-18 19:17:26 +0100
+# catalog-date 2012-05-17 13:04:31 +0200
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-movie15
-Version:	20120318
+Version:	20120517
 Release:	1
 Summary:	Multimedia inclusion package
 Group:		Publishing
