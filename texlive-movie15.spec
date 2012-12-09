@@ -63,3 +63,15 @@ be played back synchronously.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120517-1
++ Revision: 812631
+- Update to latest release.
+
+* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120318-1
++ Revision: 790693
+- Import texlive-movie15
+- Import texlive-movie15
+
