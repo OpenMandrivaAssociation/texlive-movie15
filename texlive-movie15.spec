@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-movie15
 Version:	20120517
-Release:	2
+Release:	3
 Summary:	Multimedia inclusion package
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/movie15
