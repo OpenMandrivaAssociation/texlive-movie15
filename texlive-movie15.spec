@@ -1,18 +1,12 @@
-# revision 26473
-# category Package
-# catalog-ctan /macros/latex/contrib/movie15
-# catalog-date 2012-05-17 13:04:31 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-movie15
-Version:	20190228
+Version:	26473
 Release:	1
 Summary:	Multimedia inclusion package
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/movie15
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/movie15.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/movie15.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/movie15.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/movie15.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ page has loaded. This is useful for side by side movie clips to
 be played back synchronously.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -56,22 +50,10 @@ be played back synchronously.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120517-1
-+ Revision: 812631
-- Update to latest release.
-
-* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120318-1
-+ Revision: 790693
-- Import texlive-movie15
-- Import texlive-movie15
-
